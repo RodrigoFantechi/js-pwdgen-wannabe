@@ -11,6 +11,7 @@ document.getElementById('titlePassword1').innerHTML = password;
 
 
 let result = ' ';
+
 for(let i=0; i<password.length; i++){
     result+= password.charAt(Math.random()*password.length);
 }
