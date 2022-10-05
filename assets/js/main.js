@@ -24,3 +24,28 @@ for(let i=0; i<password1.length; i++){
 alert (result);
 document.getElementById('titlePassword2').innerHTML = result;
 
+
+/* RANDOM WITH SAME WORDS */
+
+
+
+const nome2= prompt("inserire nome:");
+const cognome2= prompt("inserire cognome:");
+const colore2= prompt("inserire colore:");
+const password2 = nome2+cognome2+colore2+"22";
+
+let result1 = '';
+let numeroCappello;
+let lista = [];
+
+for(let i=0; i<password1.length; i++){
+    numeroCappello = Math.floor(Math.random()*password1.length);
+    if (lista.includes(numeroCappello)){
+        i--;
+    }else{
+    lista.push(numeroCappello);
+    result1+= password1.charAt(numeroCappello);
+}
+}
+alert (result1);
+document.getElementById('titlePassword3').innerHTML = result1;
