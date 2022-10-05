@@ -4,9 +4,7 @@ const colore= prompt("inserire colore:");
 const password = nome+cognome+colore+"22";
 
 alert (password);
-document.getElementById('titlePassword').innerHTML = password;
-document.querySelector('h2').innerHTML = password;
-
+document.getElementById('titlePassword1').innerHTML = password;
 
 
 /* RANDOM */
